@@ -10,22 +10,14 @@
 
 $(document).ready(function(){
 
-
-	//3 divs in the godammn page , change the color of divs to red
-
-	$('div').css({
-		backgroundColor: 'yellow',
-		fontSize: '100px'
-	});
-	///put all the below shit in a collection and return that shit
-	$('span,a, div').css({
-		backgroundColor: 'red'
-	});
+ ////now chnage even rows to greay and odd rows to yellow  - in botht the godammn tables
 
 
-	//ancestor descendent 
-	//give all anchor that are under div 
+// feth all the trs in both the tables - and change shit to grey
 
-	//$("div a")
+// (not what we wnated.. we wanted even odd shit)
+ $('tr').css({
+ 	backgroundColor: 'gray'
+ });
 
 });
