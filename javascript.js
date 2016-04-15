@@ -10,38 +10,22 @@
 
 $(document).ready(function(){
 
-	// <tr>
- //            <td>C#</td>
- //            <td>ASP.NET</td>
- //            <td>SQL Server</td>
- //        </tr>
 
-    $('tr td').html("nigga");   //picks all trs and tds within that tr
+	//3 divs in the godammn page , change the color of divs to red
 
-    console.log($('tr td'));   //gives all the 15 td elements 
-
-    console.log($('tr td').length);  //find all td elemtns  - length = 15
-
-
-    ///chnage the background of each of tr to red
-
-    $('tr').css({
-    	'backgroundColor': 'red'
-    });
-      //////changed
+	$('div').css({
+		backgroundColor: 'yellow',
+		fontSize: '100px'
+	});
+	///put all the below shit in a collection and return that shit
+	$('span,a, div').css({
+		backgroundColor: 'red'
+	});
 
 
-    console.log($('table').html());   //entire html content of table elemnt 
+	//ancestor descendent 
+	//give all anchor that are under div 
 
-
-    //lets alert each table row 
-    //loop through each tr element
-   
-    // 	//this references the current tr element, we want to get html of the current table row -
-    
-    $("table tr").each(function (){
-    	alert($(this).html());
-    });
-    	
+	//$("div a")
 
 });
