@@ -12,8 +12,9 @@ $(document).ready(function(){
 
  ////now chnage even rows to greay and odd rows to yellow  - in botht the godammn tables
 
- ///2nd way of writing using .each
- $('tr').each(function (){
+
+//just element
+ $('tr:even').each(function (){
  	$(this).css({
  		backgroundColor: 'blue'
  	});
