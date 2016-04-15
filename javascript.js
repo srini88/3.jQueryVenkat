@@ -12,12 +12,11 @@ $(document).ready(function(){
 
  ////now chnage even rows to greay and odd rows to yellow  - in botht the godammn tables
 
-
-// feth all the trs in both the tables - and change shit to grey
-
-// (not what we wnated.. we wanted even odd shit)
- $('tr').css({
- 	backgroundColor: 'gray'
+ ///2nd way of writing using .each
+ $('tr').each(function (){
+ 	$(this).css({
+ 		backgroundColor: 'blue'
+ 	});
  });
 
 });
