@@ -1,23 +1,41 @@
-///benefits of CDn
+///id selector 
 
-/////////////Content delivery network...systemo of distributed servers that hosts resources as images, CSS< JS files etc
+//jqeury selectors
 
-// instead of hosting on own web server 
+///alllow you to select and manipulate HTML elements
 
-////jquery will be download from the CDN server that is closest to the user..
+////elemt ID 
 
-////browser caching -- jquery is used on many popular websites...if a user has already visited a webpage that uses jquery from CDN, the jquery file would already been cached..
+///e;emtn tag name
 
-///parallel download..
+//element class name
+//element attribute
+///element attribute values and many more 
 
-///reduced server load --- the http request for jquery file is handled by the cdn server, so the load on your web server is reduced.... this also means there is a saving on your website bandwidth consumption which in turn will reduce your hosting cost.
 
 
-////your client firewalls manay block the CDN. so you may have to request your clients to whitelist the CDN
+// # symbol witin jquery is the ID selector 
 
-////what if the requrie jqery file from CDN server is not downloaded...
+// you are attaching clcik event handler to the button that is returned. 
 
-///so you got to fall back gracefully
-///backslash in the closing script tag --- to escape the /
-//the below check if the jQuery has been loaded from the CDN , if not, do the document.write 
-window.jQuery || document.write("<script src='myJqeury.js'><\/script");
+
+
+// ///change the background clor of the method
+
+// ///use the method css  - that has name and value 
+
+// <input type="button" id="btn" value="clickme"></input>
+
+
+////no dot after jqeury or $
+
+jQuery(document).ready(function(){
+
+
+	$("#btn").click(function (){
+		
+		console.log("you clicked...jquery is working fine");
+	});
+
+});
+
