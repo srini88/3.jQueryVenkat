@@ -7,16 +7,25 @@
 
 
 
+//jquery class selectors - getElemtnByClas s behind scenes 
+
+
+
+
+$('.class')
+
+
+$('.small') //select all ements with class small 
+$('.small, .big') //all ements with class small or big
+$('div.small, .big')  //all div elemtns with class small and any element with class big
+
+
+
 
 $(document).ready(function(){
 
-
-///now background color of one table 
-//combine id and element select
-
-///1st one ID right , got to use # ...remember 
-$("#table1 tr:even").css({
-	backgroundColor: 'blue'
-});
+	$("div.small, .big").css({
+		backgroundColor: 'red'
+	});
 
 });
