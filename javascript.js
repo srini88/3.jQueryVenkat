@@ -1,13 +1,20 @@
-window.onload = function(){   ///when onload event fires execute thsi function
-	///to that button add event listener
 
-	///// this is other way of taking care of event handling remember,,, instead of putting on click or some shit in DOM itself, you adding event in teh JS 
-	document.getElementById("button1").addEventListener("click", clickHnlr);
+//////documennt object and then we call ready function
+//// ready function ensures dom is fully loaded 
+///anonymous function
 
-	function clickHnlr(){
-		console.log("Button1 been clicked");
-	}
+///# in Jquery is id selector 
+
+jQuery(document).ready(function(){
+	jQuery('#button1').click(function(){
+		console.log("Srinivas loaded jQuery");
+	});
+});
 
 
+// Expose jQuery to the global object
+// window.jQuery = window.$ = jQuery;
+// So yes, it's the same. But you have two accesses, so that you avoid conflicts.
 
-}
+console.log(jQuery  === $);  //true
+console.log(jQuery  === window.jQuery);  //true
