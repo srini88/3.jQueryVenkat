@@ -10,14 +10,13 @@
 
 $(document).ready(function(){
 
- ////now chnage even rows to greay and odd rows to yellow  - in botht the godammn tables
 
+///now background color of one table 
+//combine id and element select
 
-//just element
- $('tr:even').each(function (){
- 	$(this).css({
- 		backgroundColor: 'blue'
- 	});
- });
+///1st one ID right , got to use # ...remember 
+$("#table1 tr:even").css({
+	backgroundColor: 'blue'
+});
 
 });
