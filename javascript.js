@@ -31,11 +31,24 @@
 
 jQuery(document).ready(function(){
 
-
-	$("#btn").click(function (){
+	$("#btn").css({
+		"backgroundColor": 'red',
+		"font-size": "200%"
 		
-		console.log("you clicked...jquery is working fine");
 	});
-
 });
 
+
+// Set Multiple CSS Properties
+// To set multiple CSS properties, use the following syntax:
+
+// css({"propertyname":"value","propertyname":"value",...});
+
+
+// To return the value of a specified CSS property, use the following syntax:
+
+// css("propertyname");
+// The following example will return the background-color value of the FIRST matched element:
+
+// Example
+// $("p").css("background-color");
