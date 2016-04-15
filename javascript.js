@@ -1,20 +1,20 @@
+// window.jQuery
+// (a,b){return new n.fn.init(a,b)}
+// window.$
+// (a,b){return new n.fn.init(a,b)}
+///syntax of jquery 
+// $(document).ready(handler)
 
-//////documennt object and then we call ready function
-//// ready function ensures dom is fully loaded 
-///anonymous function
 
-///# in Jquery is id selector 
+// document.ready is a jquery event 
+// earliest point in the page load process ...this is fired before the images, css are fully loaded. 
 
-jQuery(document).ready(function(){
-	jQuery('#button1').click(function(){
-		console.log("Srinivas loaded jQuery");
+///lets remove documnet.ready 
+
+
+	$("#button1").click(function(){
+		console.log("Jquery button clicked");
 	});
-});
 
 
-// Expose jQuery to the global object
-// window.jQuery = window.$ = jQuery;
-// So yes, it's the same. But you have two accesses, so that you avoid conflicts.
 
-console.log(jQuery  === $);  //true
-console.log(jQuery  === window.jQuery);  //true
