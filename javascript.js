@@ -2,8 +2,8 @@
 
 
 $(document).ready(function(){
-	//will apply to both small big and small - becuase both have small
-	$(".small").css({
+	//div that contains both the classes small and big
+	$(".small.big").css({
 		border : '5px solid red'
 	});
 });
