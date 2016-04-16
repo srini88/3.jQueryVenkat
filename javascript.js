@@ -30,13 +30,8 @@ $("#div2 .small")
 
 
 $(document).ready(function(){
-
-	$("div.small").css({
+	//ancestor and descendent - needs a space 
+	$("#div2 .small").css({
 		border : '5px solid red'
 	});
-	// or   no difference -- border without quotations
-	// $("div.small, .big").css({
-	// 	'border' : '5px solid red'
-	// });
-
 });
